@@ -98,7 +98,14 @@
       </form>
 
       <div id="dog-panel" class="dog-panel" hidden>
-        <img id="dog-picture" class="dog-picture" src="" alt="" width="160" height="160" />
+        <img
+          id="dog-picture"
+          class="dog-picture stage-puppy"
+          src="assets/beagle.svg"
+          alt="Illustration of the adopted dog"
+          width="160"
+          height="160"
+        />
         <div class="dog-details">
           <h3 id="dog-title"></h3>
           <dl class="dog-stats">
@@ -111,9 +118,21 @@
             <dt>Happiness</dt>
             <dd id="dog-happiness"></dd>
           </dl>
+          <div class="growth">
+            <p class="growth-caption">Growth: <span id="growth-text">Puppy</span></p>
+            <div class="growth-bar" aria-hidden="true">
+              <div id="growth-fill" class="growth-fill"></div>
+            </div>
+          </div>
+
           <div class="dog-actions">
             <button type="button" id="feed-btn" class="action-btn">Feed</button>
             <button type="button" id="play-btn" class="action-btn">Play</button>
+            <button type="button" id="next-day-btn" class="action-btn">Next Day</button>
+          </div>
+
+          <div class="dog-actions dog-actions-secondary">
+            <button type="button" id="start-over-btn" class="ghost-btn">Start Over</button>
           </div>
         </div>
       </div>

@@ -305,3 +305,75 @@ main {
     justify-content: center;
   }
 }
+
+/* ---------- Growth bar, extra buttons, hidden states ---------- */
+
+/* The form uses display: flex, so it needs its own hidden rule too. */
+.adopt-form[hidden] {
+  display: none;
+}
+
+.growth {
+  margin: 0 0 1rem;
+}
+
+.growth-caption {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--grass-dark);
+}
+
+.growth-bar {
+  height: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background-color: #e8efe4;
+  overflow: hidden;
+}
+
+.growth-fill {
+  height: 100%;
+  width: 33%;
+  border-radius: 999px;
+  background-image: linear-gradient(90deg, var(--leaf), var(--grass));
+  transition: width 0.3s ease;
+}
+
+/* The picture grows a little at every stage. The stage is also written
+   out as text, so it is never shown by size alone. */
+.dog-picture {
+  transition: width 0.3s ease;
+}
+
+.dog-picture.stage-puppy {
+  width: 110px;
+}
+
+.dog-picture.stage-young {
+  width: 140px;
+}
+
+.dog-picture.stage-adult {
+  width: 175px;
+}
+
+.dog-actions-secondary {
+  margin-top: 0.75rem;
+}
+
+.ghost-btn {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.45rem 1rem;
+  border: 1px solid #c9d6c2;
+  border-radius: 999px;
+  background-color: transparent;
+  color: #6b5a48;
+  cursor: pointer;
+}
+
+.ghost-btn:hover {
+  border-color: #a83232;
+  color: #a83232;
+}
