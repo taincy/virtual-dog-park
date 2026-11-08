@@ -121,6 +121,153 @@ main {
   color: #6b5a48;
 }
 
+/* ---------- My Virtual Dog ---------- */
+
+.adopt-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--grass-dark);
+}
+
+.field select,
+.field input[type="text"] {
+  font: inherit;
+  min-width: 12rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #c9d6c2;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: var(--bark);
+}
+
+.field input[type="text"]:focus,
+.field select:focus {
+  outline: 3px solid rgba(76, 143, 99, 0.35);
+  outline-offset: 1px;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #6b5a48;
+}
+
+.primary-btn {
+  font: inherit;
+  font-weight: 700;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--grass);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: var(--grass-dark);
+}
+
+.error-message {
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #f3c9c9;
+  border-radius: 0.5rem;
+  background-color: #fdecec;
+  color: #a83232;
+  font-weight: 600;
+}
+
+.error-message[hidden] {
+  display: none;
+}
+
+.dog-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Without this rule the panel would stay visible, because the
+   display: flex above wins over the hidden attribute. */
+.dog-panel[hidden] {
+  display: none;
+}
+
+.dog-picture {
+  flex: 0 0 auto;
+  width: 160px;
+  height: auto;
+}
+
+.dog-details {
+  flex: 1 1 16rem;
+}
+
+#dog-title {
+  margin: 0 0 0.5rem;
+  color: var(--grass);
+  font-size: 1.35rem;
+}
+
+.dog-stats {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 0.9rem;
+  margin: 0 0 1rem;
+}
+
+.dog-stats dt {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--grass-dark);
+}
+
+.dog-stats dd {
+  margin: 0;
+}
+
+.dog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.action-btn {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.55rem 1.2rem;
+  border: 1px solid var(--leaf);
+  border-radius: 999px;
+  background-color: #eef7ee;
+  color: var(--grass-dark);
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: var(--leaf);
+  color: #ffffff;
+}
+
 @media (max-width: 480px) {
   body {
     padding: 0 0.75rem 1.5rem;
@@ -128,5 +275,33 @@ main {
 
   .panel {
     padding: 1.1rem;
+  }
+
+  .adopt-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .field select,
+  .field input[type="text"] {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .dog-panel {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .dog-picture {
+    margin: 0 auto;
+  }
+
+  .dog-actions {
+    justify-content: center;
+  }
+
+  .dog-stats {
+    justify-content: center;
   }
 }

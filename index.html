@@ -63,6 +63,61 @@
         </article>
       </div>
     </section>
+
+    <section id="my-dog" class="panel" aria-labelledby="my-dog-heading">
+      <h2 id="my-dog-heading">My Virtual Dog</h2>
+      <p class="section-intro">
+        Choose a breed, give your dog a name, and click Adopt.
+      </p>
+
+      <form id="adopt-form" class="adopt-form">
+        <div class="field">
+          <label for="breed-select">Breed</label>
+          <select id="breed-select" name="breed">
+            <option value="Beagle">Beagle</option>
+            <option value="Golden Retriever">Golden Retriever</option>
+            <option value="Poodle">Poodle</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="dog-name">Dog name</label>
+          <input
+            id="dog-name"
+            name="dogName"
+            type="text"
+            maxlength="20"
+            autocomplete="off"
+            placeholder="e.g. Buddy"
+          />
+          <p class="hint">Up to 20 characters. Spaces inside the name are allowed.</p>
+        </div>
+
+        <button type="submit" class="primary-btn">Adopt</button>
+        <p id="adopt-error" class="error-message" role="alert" hidden></p>
+      </form>
+
+      <div id="dog-panel" class="dog-panel" hidden>
+        <img id="dog-picture" class="dog-picture" src="" alt="" width="160" height="160" />
+        <div class="dog-details">
+          <h3 id="dog-title"></h3>
+          <dl class="dog-stats">
+            <dt>Breed</dt>
+            <dd id="dog-breed"></dd>
+            <dt>Day</dt>
+            <dd id="dog-day"></dd>
+            <dt>Growth stage</dt>
+            <dd id="dog-stage"></dd>
+            <dt>Happiness</dt>
+            <dd id="dog-happiness"></dd>
+          </dl>
+          <div class="dog-actions">
+            <button type="button" id="feed-btn" class="action-btn">Feed</button>
+            <button type="button" id="play-btn" class="action-btn">Play</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
