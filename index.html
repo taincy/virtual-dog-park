@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Dog Park</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Virtual Dog Park</h1>
+    <p class="welcome">
+      Welcome to the park! Meet three friendly breeds, read how to care for them,
+      and take your time looking around.
+    </p>
+  </header>
+
+  <main>
+    <section id="encyclopedia" class="panel" aria-labelledby="encyclopedia-heading">
+      <h2 id="encyclopedia-heading">Dog Encyclopedia</h2>
+      <p class="section-intro">
+        Each card shows one breed with its size, personality, and everyday care.
+      </p>
+
+      <div class="breed-grid">
+        <article class="breed-card">
+          <img class="breed-art" src="assets/beagle.svg" alt="Illustration of a Beagle" width="200" height="200" />
+          <h3>Beagle</h3>
+          <dl class="breed-facts">
+            <dt>Size</dt>
+            <dd>Small to medium, about 10&ndash;11 kg and roughly 33&ndash;41 cm tall.</dd>
+            <dt>Personality</dt>
+            <dd>Curious, cheerful, and led by its nose. It loves company and follows scents.</dd>
+            <dt>Everyday care</dt>
+            <dd>A daily walk plus time to sniff, a secure garden, and a weekly brush.</dd>
+          </dl>
+        </article>
+
+        <article class="breed-card">
+          <img class="breed-art" src="assets/golden-retriever.svg" alt="Illustration of a Golden Retriever" width="200" height="200" />
+          <h3>Golden Retriever</h3>
+          <dl class="breed-facts">
+            <dt>Size</dt>
+            <dd>Large, about 25&ndash;34 kg and roughly 51&ndash;61 cm tall.</dd>
+            <dt>Personality</dt>
+            <dd>Gentle, patient, and eager to please, which makes it a popular family dog.</dd>
+            <dt>Everyday care</dt>
+            <dd>Long walks, fetch games, and brushing two or three times a week.</dd>
+          </dl>
+        </article>
+
+        <article class="breed-card">
+          <img class="breed-art" src="assets/poodle.svg" alt="Illustration of a Poodle" width="200" height="200" />
+          <h3>Poodle</h3>
+          <dl class="breed-facts">
+            <dt>Size</dt>
+            <dd>Comes in several sizes; the miniature stands about 28&ndash;38 cm tall.</dd>
+            <dt>Personality</dt>
+            <dd>Bright, alert, and quick to learn. It enjoys training games and attention.</dd>
+            <dt>Everyday care</dt>
+            <dd>Regular brushing, a haircut every few weeks, and short but frequent walks.</dd>
+          </dl>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built for a first-year programming lab. <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

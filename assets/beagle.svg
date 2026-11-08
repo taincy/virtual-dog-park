@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Illustration of a Beagle">
+  <title>Beagle illustration</title>
+  <circle cx="100" cy="100" r="96" fill="#edf6e8" />
+  <!-- hanging ears -->
+  <ellipse cx="52" cy="106" rx="18" ry="38" fill="#7a4b25" transform="rotate(-10 52 106)" />
+  <ellipse cx="148" cy="106" rx="18" ry="38" fill="#7a4b25" transform="rotate(10 148 106)" />
+  <!-- head -->
+  <ellipse cx="100" cy="88" rx="46" ry="44" fill="#fffdf6" />
+  <!-- brown patches around the eyes -->
+  <ellipse cx="79" cy="84" rx="17" ry="14" fill="#a9713d" />
+  <ellipse cx="121" cy="84" rx="17" ry="14" fill="#a9713d" />
+  <!-- eyes -->
+  <circle cx="81" cy="86" r="5" fill="#2b1c11" />
+  <circle cx="119" cy="86" r="5" fill="#2b1c11" />
+  <circle cx="82.5" cy="84.5" r="1.7" fill="#ffffff" />
+  <circle cx="120.5" cy="84.5" r="1.7" fill="#ffffff" />
+  <!-- muzzle -->
+  <ellipse cx="100" cy="114" rx="27" ry="21" fill="#ffffff" />
+  <ellipse cx="100" cy="105" rx="9" ry="7" fill="#2b1c11" />
+  <path d="M100 112v6" stroke="#2b1c11" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M100 118c-3 5-9 6-12 2" fill="none" stroke="#2b1c11" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M100 118c3 5 9 6 12 2" fill="none" stroke="#2b1c11" stroke-width="2.5" stroke-linecap="round" />
+  <!-- white blaze on the forehead -->
+  <ellipse cx="100" cy="52" rx="9" ry="14" fill="#fffdf6" />
+</svg>
